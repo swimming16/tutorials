@@ -33,6 +33,7 @@ if int((tf.__version__).split('.')[1]) < 12 and int((tf.__version__).split('.')[
 else:
     init = tf.global_variables_initializer()
 sess.run(init)
+print(sess.run(loss))
 
 for step in range(201):
     sess.run(train)

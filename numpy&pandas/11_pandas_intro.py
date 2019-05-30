@@ -14,7 +14,7 @@ s = pd.Series([1,3,6,np.nan,4,1]) # similar with 1D numpy
 print(s)
 dates = pd.date_range('20160101', periods=6)
 df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=['A','B','C','D'])
-print(df['B'])
+print(df)
 df2 = pd.DataFrame({'A' : 1.,
                        'B' : pd.Timestamp('20130102'),
                         'C' : pd.Series(1,index=list(range(4)),dtype='float32'),
